@@ -88,12 +88,12 @@ var TMDMonthlyRainfall = SAGE2_App.extend({
   generateLayout: function() {
     this.layout = {
       font: {
-        size: ui.titleBarHeight * 0.5
+        size: ui.titleBarHeight * 0.4
       },
       title: {
         text: "Monthly Rainfall for " + this.stationData["StationNameEnglish"],
         font: {
-          size: ui.titleBarHeight * 0.7
+          size: ui.titleBarHeight * 0.4
         }
       },
       width: 600,
@@ -102,7 +102,7 @@ var TMDMonthlyRainfall = SAGE2_App.extend({
         title: {
           text: 'Rainfall (mm)',
           font: {
-            size: ui.titleBarHeight * 0.6,
+            size: ui.titleBarHeight * 0.4,
           }
         },
         range: this.scale 
@@ -111,7 +111,7 @@ var TMDMonthlyRainfall = SAGE2_App.extend({
         title: {
           text: 'Month', 
           font: {
-            size: ui.titleBarHeight * 0.6,
+            size: ui.titleBarHeight * 0.4,
           }
         }  
       }
