@@ -1,0 +1,21 @@
+{
+  "main_script": "TMDMonthlyRainfall.js",
+  "icon": "icon.jpg",
+  "width":  800,
+  "height": 800,
+  "resize": "free",
+  "animation": true,
+  "dependencies": [
+      "./plotly-latest.min.js"
+  ],
+  "load": {
+  
+  },
+  "plugin": "plugin.js",
+  "title": "TMDMonthlyRainfall",
+  "version": "1.0.0",
+  "description": "Part of LandSAGE2 Prototype App for Thailand Data",
+  "keywords": [ ],
+  "author": "Billy Troy Wooton <bwooton@hawaii.edu>",
+  "license": "SAGE2-Software-License"
+}
