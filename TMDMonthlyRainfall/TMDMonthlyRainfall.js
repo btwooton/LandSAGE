@@ -68,7 +68,11 @@ var TMDMonthlyRainfall = SAGE2_App.extend({
     for (let i = 1; i <= 11; i++) {
       var nextDate = new Date(Date.parse(date.toDateString()));
       nextDate.setMonth(i);
-      dates.push(nextDate.getFullYear() + '-0' + (nextDate.getMonth()+1));
+      if (i < 9) {
+        dates.push(nextDate.getFullYear() + '-0' + (nextDate.getMonth()+1));
+      } else {
+        dates.push(nextDate.getFullYear() + '-' + (nextDate.getMonth()+1));
+      }
     }
 
     var stationMonthlyReadings = [];
