@@ -120,6 +120,7 @@ var LandSAGE = SAGE2_App.extend({
     this.sensorData = stations['Station'];
     this.writeDataToCache('TMDSensors');
     console.log("Loaded data from TMD");
+    console.log(this.sensorData);
     this.generateGeoJSONFromSensorData();
     this.makeTMDGeoJSON();
     this.tmdDataLoaded = true;
@@ -315,21 +316,23 @@ var LandSAGE = SAGE2_App.extend({
 
     for (var i = 0; i < this.sensorData.length; i++) {
       var sensorDatum = this.sensorData[i];
-      var feature = {
-        type: "Feature",
-        geometry: {
-          type: "Point",
-          coordinates: [sensorDatum.Longitude, sensorDatum.Latitude],
-        },
-        properties: {
-          name: sensorDatum.StationNameEnglish,
-          nameThai: sensorDatum.StationNameThai,
-          number: sensorDatum.WmoStationNumber,
-          observation: sensorDatum.Observation,
-          province: sensorDatum.Province
-        }
-      };
-      geoJSON.features.push(feature);
+      if (sensorDatum.Longitude.constructor === String) {
+        var feature = {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [sensorDatum.Longitude, sensorDatum.Latitude],
+          },
+          properties: {
+            name: sensorDatum.StationNameEnglish,
+            nameThai: sensorDatum.StationNameThai,
+            number: sensorDatum.WmoStationNumber,
+            observation: sensorDatum.Observation,
+            province: sensorDatum.Province
+          }
+        };
+        geoJSON.features.push(feature);
+      }
     }
     this.mapDataCollections["TMDData"] = geoJSON;
   },
@@ -760,12 +763,15 @@ var LandSAGE = SAGE2_App.extend({
       console.log("popup opened");
       let button = document.querySelector('a.leaflet-popup-close-button');
       console.log(button);
-      button.style.fontSize = (ui.titleBarHeight * 0.7) + "px";
+      button.style.fontSize = (ui.titleBarHeight * 0.65) + "px";
       button.style.color = "white";
       button.style.backgroundColor = "red";
-      button.style.borderRadius = "10px";
-      button.style.height = (ui.titleBarHeight * 0.5) + "px";
-      button.style.width = (ui.titleBarHeight * 0.5) + "px";
+      button.style.borderRadius = "5px";
+      button.style.height = (ui.titleBarHeight * 0.8) + "px";
+      button.style.width = (ui.titleBarHeight * 0.8) + "px";
+      button.style.textAlign = "center";
+      button.style.padding = 0;
+      button.style.paddingTop = "1%";
       setTimeout(() => _this.ensurePopupCloseStyleBinding(), 250);
     });
   },
@@ -773,12 +779,15 @@ var LandSAGE = SAGE2_App.extend({
   ensurePopupCloseStyleBinding: function() {
     let button = document.querySelector('a.leaflet-popup-close-button');
       console.log(button);
-      button.style.fontSize = (ui.titleBarHeight * 0.7) + "px";
+      button.style.fontSize = (ui.titleBarHeight * 0.65) + "px";
       button.style.color = "white";
       button.style.backgroundColor = "red";
-      button.style.borderRadius = "10px";
-      button.style.height = (ui.titleBarHeight * 0.5) + "px";
-      button.style.width = (ui.titleBarHeight * 0.5) + "px";
+      button.style.borderRadius = "5px";
+      button.style.height = (ui.titleBarHeight * 0.8) + "px";
+      button.style.width = (ui.titleBarHeight * 0.8) + "px";
+      button.style.textAlign = "center";
+      button.style.padding = 0;
+      button.style.paddingTop = "1%";
   }
 
 });
