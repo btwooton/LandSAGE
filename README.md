@@ -15,6 +15,15 @@ __The Camboda Ministry of Water Resources and Meteorology__
 __The Mekong River Commission__
 ![MRC](LandSAGE_Images/LandSAGE_5.png)
 
+The basemap and data layers may be swapped/turned on and off via the layer swap widget.
+![LayerSwap](LandSAGE_Images/LandSAGE_1.png)
+![LayerMenu](LandSAGE_Images/LandSAGE_2.png)
+
+Map markers represent weather and river height sensors that may be clicked to view their relevant data, as well as plots of historical trends at various temporal resolutions.
+![InteractiveMarker](LandSAGE_Images/LandSAGE_6.png)
+![PopupMenu](LandSAGE_Images/LandSAGE_7.png)
+![MonthlyRainfall](LandSAGE_Images/LandSAGE_8.png)
+
 The code in this repository is split into two subdirectories, each of which is a self-contained SAGE2 application.
 The LandSAGE directory contains the actual LandSAGE application prototype. This application depends upon the other
 application (TMDMonthlyRainfall) in order to run correctly.
