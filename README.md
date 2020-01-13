@@ -3,7 +3,7 @@ Code for the LandSAGE Visualization Prototype Application for SAGE2
 
 # Description
 The LandSAGE application is a SAGE2 native application written exclusively for SAGE2 powered CyberCANOE systems.
-![LandSAGE](https://raw.githubusercontent.com/btwooton/LandSAGE/master/LandSAGE_Images/LandSAGE1.png)
+![LandSAGE](LandSAGE_Images/Screen%20Shot%202019-12-26%20at%208.55.54%20PM.png)
 The code in this repository is split into two subdirectories, each of which is a self-contained SAGE2 application.
 The LandSAGE directory contains the actual LandSAGE application prototype. This application depends upon the other
 application (TMDMonthlyRainfall) in order to run correctly.
