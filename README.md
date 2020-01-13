@@ -3,18 +3,11 @@ Code for the LandSAGE Visualization Prototype Application for SAGE2
 
 # Description
 The LandSAGE application is a SAGE2 native application written exclusively for SAGE2 powered CyberCANOE systems.
-
 The code in this repository is split into two subdirectories, each of which is a self-contained SAGE2 application.
-
 The LandSAGE directory contains the actual LandSAGE application prototype. This application depends upon the other
-
 application (TMDMonthlyRainfall) in order to run correctly.
-
 When a user clicks the "View Monthly Rainfall" button on the leaflet popup for one of the TMD weather sensors (blue points)
-
-an instance of the TMDMonthlyRainfall application opens on the SAGE wall, showing the monthly rainfall for the selected location
-
-in a Plotly line chart. Both applications can be loaded into SAGE in with one of the following two methods.
+an instance of the TMDMonthlyRainfall application opens on the SAGE wall, showing the monthly rainfall for the selected location in a Plotly line chart. Both applications can be loaded into SAGE in with one of the following two methods.
 
 ## Method 1: Dragging Zipped Applications to the SAGE2 Enabled CyberCANOE
 1. Drag the zipped contents of each of the application directories to the SAGE wall via the WebUI, just as you would a PDF or image.
