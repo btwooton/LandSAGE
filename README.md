@@ -13,7 +13,7 @@ __The Camboda Ministry of Water Resources and Meteorology__
 ![CDM](LandSAGE_Images/LandSAGE_4.png)
 
 __The Mekong River Commission__
-|[MRC](LandSAGE_Images/LandSAGE_5.png)
+![MRC](LandSAGE_Images/LandSAGE_5.png)
 
 The code in this repository is split into two subdirectories, each of which is a self-contained SAGE2 application.
 The LandSAGE directory contains the actual LandSAGE application prototype. This application depends upon the other
