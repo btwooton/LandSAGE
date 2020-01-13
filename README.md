@@ -4,6 +4,17 @@ Code for the LandSAGE Visualization Prototype Application for SAGE2
 # Description
 The LandSAGE application is a SAGE2 native application written exclusively for SAGE2 powered CyberCANOE systems.
 ![LandSAGE](LandSAGE_Images/Screen%20Shot%202019-12-26%20at%208.55.54%20PM.png)
+This application is a prototype decisision support tool for the monitoring and mitigation of landslides and flooding in souteast asia. Currently the application leverages meteorological and river height data from three sources.
+
+__The Thai Meteorological Department__
+![TMD](LandSAGE_Images/LandSAGE_3.png)
+
+__The Camboda Ministry of Water Resources and Meteorology__
+![CDM](LandSAGE_Images/LandSAGE_4.png)
+
+__The Mekong River Commission__
+|[MRC](LandSAGE_Images/LandSAGE_5.png)
+
 The code in this repository is split into two subdirectories, each of which is a self-contained SAGE2 application.
 The LandSAGE directory contains the actual LandSAGE application prototype. This application depends upon the other
 application (TMDMonthlyRainfall) in order to run correctly.
