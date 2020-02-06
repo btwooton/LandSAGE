@@ -335,6 +335,7 @@ var LandSAGE = SAGE2_App.extend({
       }
     }
     this.mapDataCollections["TMDData"] = geoJSON;
+    console.log(geoJSON);
   },
 
   createHTMLTableFromProperties: function (properties) {
