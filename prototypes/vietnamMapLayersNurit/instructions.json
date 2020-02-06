@@ -1,0 +1,20 @@
+{
+  "main_script": "vietnamMapLayers.js",
+  "icon": "icon.jpg",
+  "width":  800,
+  "height": 800,
+  "animation": true,
+  "dependencies": [
+      "./leaflet/leaflet.js",
+      "./leaflet/leaflet.css"
+  ],
+  "load": {
+
+  },
+  "title": "VietnamMapLayers",
+  "version": "1.0.0",
+  "description": "Landslide Map Layers for Nam Dan Commune",
+  "keywords": [ ],
+  "author": "Billy Troy Wooton <bwooton@hawaii.edu>",
+  "license": "SAGE2-Software-License"
+}
